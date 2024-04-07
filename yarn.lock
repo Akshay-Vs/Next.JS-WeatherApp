@@ -1784,7 +1784,7 @@ human-signals@^5.0.0:
 
 husky@^9.0.11:
   version "9.0.11"
-  resolved "https://registry.npmjs.org/husky/-/husky-9.0.11.tgz"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-9.0.11.tgz#fc91df4c756050de41b3e478b2158b87c1e79af9"
   integrity sha512-AB6lFlbwwyIqMdHYhwPe+kjOC3Oc5P3nThEoW/AaO2BX3vJDjWPFxYLxokUZOo6RNX20He3AaT8sESs9NJcmEw==
 
 ignore@^5.2.0:
