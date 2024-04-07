@@ -1,0 +1,36 @@
+@import '../styles/theme-color.scss';
+
+.blured-blobs {
+  &__warm {
+    position: absolute;
+    width: 184px;
+    height: 124px;
+    background-color: $warm;
+    border-radius: 30% 60% 20% 80%;
+    z-index: 11;
+    opacity: 0.5;
+    left: 15%;
+  }
+
+  &__cold {
+    position: absolute;
+    width: 256px;
+    height: 256px;
+    background-color: $cold;
+    z-index: 10;
+    opacity: 0.5;
+    border-radius: 50% 30% 70% 10%;
+    bottom: 0;
+  }
+
+  &__neutral {
+    position: absolute;
+    width: 256px;
+    height: 256px;
+    background-color: $neutral;
+    z-index: 9;
+    opacity: 0.5;
+    border-radius: 50% 30% 70% 10%;
+    top: 0;
+  }
+}

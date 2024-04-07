@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'sf-pro';
+  font-style: 'regular';
+  src: url('../../../assets/fonts/SFPRODISPLAYREGULAR.OTF');
+}
+
+@font-face {
+  font-family: 'sf-pro-medium';
+  font-style: 'medium';
+  src: url('../../../assets/fonts/SFPRODISPLAYMEDIUM.OTF');
+}
+
+@font-face {
+  font-family: 'sf-pro-bold';
+  font-style: 'bold';
+  src: url('../../../assets/fonts/SFPRODISPLAYBOLD.OTF');
+}
+
+@mixin sf-pro($font-size: 24px, $font-weight: 500, $font-color: #ffff) {
+  font-family: 'sf-pro';
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $font-color;
+}
+
+@mixin sf-pro-medium($font-size: 24px, $font-weight: 500, $font-color: #ffff) {
+  font-family: 'sf-pro-medium';
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $font-color;
+}
+
+@mixin sf-pro-bold($font-size: 24px, $font-weight: 500, $font-color: #ffff) {
+  font-family: 'sf-pro-bold';
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $font-color;
+}
