@@ -1,0 +1,29 @@
+@import '../../shared/styles/theme-color.scss';
+
+.forecast-card {
+  width: 100%;
+
+  min-width: 440px;
+  min-height: 380px;
+
+  background: $glass;
+  border-radius: 30px;
+
+  padding: 30px;
+  margin: 20px;
+  margin-left: 0;
+  position: relative;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: auto;
+  overflow-y: hidden;
+  z-index: 19;
+  backdrop-filter: blur(10px);
+
+  @media screen and (max-width: 720px) {
+    width: 90%;
+    min-width: 100px;
+  }
+}
