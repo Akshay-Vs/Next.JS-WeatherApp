@@ -11,7 +11,7 @@ interface IExtandableProps extends IChildren {
 }
 
 interface ITypographyHeading extends IExtandableProps {
-  variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'h7';
+  variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'h7' | 'h8';
 }
 
 interface ITypographyParagraph extends IExtandableProps {}
@@ -53,7 +53,7 @@ Typography.Paragraph = Paragraph;
 // RunTime Typechecking using PropTypes
 Typography.propTypes = {
   children: PropTypes.node.isRequired,
-  variant: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'h7']),
+  variant: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'h7', 'h8']),
   className: PropTypes.string,
 };
 

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
-import './globals.css';
+import './globals.scss';
 
 const inter = Inter({ subsets: ['latin'] });
 
