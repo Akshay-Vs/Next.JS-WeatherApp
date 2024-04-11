@@ -1,0 +1,25 @@
+@import '../styles/theme-color.scss';
+@import '../styles/typography.scss';
+
+.search-bar__input {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+  margin-bottom: 2px;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include sf-pro(18px, 400, #fefefeb1);
+
+  &::placeholder {
+    color: $text-color;
+    @include sf-pro(18px, 400, #fefefe7c);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -8,7 +8,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 import './WeatherCard.scss';
-import BluredBlobs from '@/components/shared/BluredBlobs';
 import Image from 'next/image';
 
 import ThunderStormImage from '@/assets/images/thunderstorm.png';
@@ -24,17 +23,13 @@ const WeatherMain = () => {
 
   return (
     <div className="weather-card">
-      <BluredBlobs>
-        <BluredBlobs.BlobCold />
-        <BluredBlobs.BlobWarm />
-        <BluredBlobs.BlobNeutral />
-      </BluredBlobs>
-
       <Typography>
-        <div className="flex items-center gap-8">
-          <Typography.Heading className="flex items-center">
-            {temperature}
-            <span className="text-5xl mb-[20%]">&deg;{unit}</span>
+        <div className="flex items-center gap-8 ">
+          <Typography.Heading>
+            <div className="text-[#020003] flex items-center">
+              {temperature}
+              <span className="text-5xl mb-[20%]">&deg;{unit}</span>
+            </div>
           </Typography.Heading>
           <Image
             src={ThunderStormImage}
@@ -46,23 +41,29 @@ const WeatherMain = () => {
 
         <Typography.Heading
           variant="h6"
-          className="flex justify-start items-center"
+          className="flex justify-start items-center "
         >
-          <FontAwesomeIcon icon={faCloudShowersHeavy} className="mr-3" />
-          {weatherStatus}
+          <div className="text-[#020003]">
+            <FontAwesomeIcon icon={faCloudShowersHeavy} className="mr-3 " />
+            {weatherStatus}
+          </div>
         </Typography.Heading>
 
         <Seperator className="mt-5 mb-5" />
 
         <div className="flex flex-col gap-2">
           <Typography.Heading variant="h7">
-            <FontAwesomeIcon icon={faLocationDot} className="mr-3" />
-            {location}
+            <div className="text-[#020003]">
+              <FontAwesomeIcon icon={faLocationDot} className="mr-3" />
+              {location}
+            </div>
           </Typography.Heading>
 
           <Typography.Heading variant="h7">
-            <FontAwesomeIcon icon={faCalendarDays} className="mr-3" />
-            {currentDate} <b>{currentTime}</b>
+            <div className="text-[#020003]">
+              <FontAwesomeIcon icon={faCalendarDays} className="mr-3" />
+              {currentDate} <b>{currentTime}</b>
+            </div>
           </Typography.Heading>
         </div>
       </Typography>

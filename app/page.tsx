@@ -8,9 +8,6 @@ export default function Home() {
       <div className="flex">
         <WeatherMain />
         <ForecastCard>
-          <BluredBlobs>
-            <BluredBlobs.BlobWarm className="w-full" />
-          </BluredBlobs>
           <ForecastCard.FullDayForecast />
         </ForecastCard>
       </div>

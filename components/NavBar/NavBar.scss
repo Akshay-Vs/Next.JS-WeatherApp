@@ -1,0 +1,34 @@
+@import '../shared/styles/theme-color.scss';
+
+.navbar {
+  min-width: 80px;
+  height: 58px;
+
+  border-radius: 30px;
+
+  margin: 20px;
+  margin-bottom: 8px;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+
+  z-index: 19;
+  backdrop-filter: blur(10px);
+
+  @media screen and (max-width: 720px) {
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding: 14px;
+    color: #fefefe;
+    border-radius: 100%;
+    background-color: #232325;
+  }
+}
